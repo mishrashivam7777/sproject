@@ -9,21 +9,27 @@
 <body>
     <div id="container">
     <div class="hero">
-
+  <div class="toggle-btn" onclick="myfunction()">
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>
      <div class="navbar">
       <h1> Fusha</h1>
+      
       <div class="navbarcomponent">
         <a class="nn" style="opacity: 1;">Home</a>
         <a class="nn" href="">About Us</a>
         <a class="nn" href="">Blog</a>
         <a class="nn" href="">Pricing</a>
         <a class="nn" href="">Contact</a>
+   
       </div>
-      <button class="nnbutton">Get started</button>
+      <button class="nnbutton  nnnnn">Get started</button>
      </div>
       <div class="herosection">
-        <h1 class="heroh" style="margin-left: 230px;"> Streamline your</h1>
-        <h1 class="heroh" style="margin-left: 190px;">Business with Fusha</h1>
+        <h1 class="heroh" > Streamline your</h1>
+        <h1 class="heroh" >Business with Fusha</h1>
         <p class="herop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iusto recusandae eligendi quae eveniet? Libero sed praesentium labore voluptatum odio?</p>
         <p class="herop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sed nostrum quos enim voluptas asperiores, incidunt, cumque debitis commodi quaerat beatae.</p>
         <div class="buttonsection">
@@ -115,7 +121,7 @@
                     <h2 class="heading-card">Amazing software busiees by Fushal</h2>
                     <p class="sub-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nam saepe eaque ea nostrum adipisci itaque placeat eius tempore! Corrupti tenetur eum similique eius natus est aliquid iusto in unde.</p>
                     <div class="rating">stars</div>
-                    <div class="user-Name">Shivam Mishra</div>
+                    <div class="user-Name">......</div>
                 </div>
                 <div class="btn right"> > </div>
             </div>
@@ -133,7 +139,7 @@
                 </div>
             </div>
             <div class="footer-links">
-                <div class="company-links">
+                <div class="company-links" >
                     <div class="heading-link">Company</div>
                     <div class="link">link1</div>
                     <div class="link">link2</div>
@@ -167,6 +173,13 @@
                 Lorem ipsum dolor sit amet consectetur 
             </div>
         </footer>
-   </div> 
+   </div>
+   
+   <script>
+    function myfunction() {
+        var navbar =document.querySelector('.navbarcomponent')
+    navbar.classList.toggle('show')
+    }
+   </script>
 </body>
 </html>

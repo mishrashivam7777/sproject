@@ -48,6 +48,7 @@
     align-items: center;
     font-size: 50px;
     font-weight: bolder;
+    text-emphasis: center;
 }
 .nnnbutton{
     padding: 15px 20px;
@@ -119,21 +120,22 @@
 }
 
 .fourthsection{
-    margin-top: 290px;
+    margin-top: 200px;
+    display: flex;
 }
 
 .fourthsection1 {
  margin: auto;
  width: 40%;
- margin-left: 300px;
+ /* margin-left: 300px; */
  display: flex;
  flex-direction: column;
  gap: 5px;
- position: absolute;
+ /* position: absolute; */
 }
 .fourthsection2{
-    position: relative;
-    margin-left: 1000px;
+    /* position: relative; */
+    /* margin-left: 1000px; */
 }
 .fifthsection{
     margin: auto;
@@ -275,4 +277,76 @@
     padding: 10px;
     padding-left: 40px;
     font-size: 12px;
+}
+
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top:40px;
+    display: none;
+}
+.toggle-btn span{
+  display: inline;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  float: left;
+  margin-bottom: 8px;
+}
+@media(max-width:991px){
+    .toggle-btn{
+        display: block;
+    }
+    .navbarcomponent{
+        display: none;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-top: 30px;
+
+    }
+    .nnnnn{
+        display: none;
+    }
+    .navbar.show{
+        display: block;
+    }
+    
+    .ssimage1{
+        width: 100px;
+        height: 100px;
+    }
+    .midsection1{
+       flex-direction: column;
+    }
+    .midsection2{
+        flex-direction: column;
+    }
+    .thirdsection1{
+        display: none;
+    }
+    .fourthsection{
+        flex-direction: column;
+    }
+    .fifthsection{
+        display: none;
+    }
+    .wrapper{
+        margin-top: 450px;
+    }
+    .fourthsection2{
+        margin-left: 40px;
+    }
+    .ssimage1{
+
+    }
+}
+@media(max-width:501px){
+    .heroh{
+        align-items:start;
+    }
+}
+.thirdsection1::-webkit-scrollbar{
+    display: none;
 }
