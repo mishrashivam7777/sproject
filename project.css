@@ -102,19 +102,23 @@
 .topsecbh{
     text-align: center;
 }
+
 .thirdsection1{
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     gap: 100px;
+    /* justify-content: space-between; */
+    text-align: center;
     position: relative;
+    text-align: justify;
 }
 .thirdsection2{
-    position: absolute;
+     position: absolute; 
     right: -70px;
-    top: -20px; 
+    top: -20px;  
     margin-left: 30px;
 
 }
@@ -122,21 +126,21 @@
 .fourthsection{
     margin-top: 200px;
     display: flex;
+    gap: 100px;
 }
 
 .fourthsection1 {
  margin: auto;
- width: 40%;
- /* margin-left: 300px; */
+ width: 50%;
+ 
  display: flex;
  flex-direction: column;
  gap: 5px;
- /* position: absolute; */
+
 }
-.fourthsection2{
-    /* position: relative; */
-    /* margin-left: 1000px; */
-}
+/* .fourthsection2{
+    
+} */
 .fifthsection{
     margin: auto;
     width: 80%;
@@ -341,10 +345,20 @@
     .ssimage1{
 
     }
+    .topsecbh{
+        width: 90%;
+    }
 }
-@media(max-width:501px){
+@media(max-width:801px){
     .heroh{
         align-items:start;
+    }
+    .herosection{
+        width: 90%;
+
+    }
+    .fourthsection1{
+        width: 90%;
     }
 }
 .thirdsection1::-webkit-scrollbar{
